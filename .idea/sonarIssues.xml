@@ -3,12 +3,42 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/a.regexp">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar!/org/apache/commons/lang3/Validate.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1-sources.jar!/org/apache/http/protocol/ResponseServer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos/backoffice-parent/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos/pos-parent/pom.xml">
           <value>
             <set />
           </value>
@@ -19,6 +49,96 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-core/src/main/resources/app-context-core.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-facades/src/main/java/com/marks/pos/backoffice/facades/facade/impl/DefaultCartPaymentFacade.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-facades/src/main/java/com/marks/pos/backoffice/facades/healthchek/healthchekers/BusyHealthCheck.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/api/PaymentOption.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/api/Route.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/api/Tender.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/api/TransferRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/api/TransferResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/checkout/processors/GiftCardActivationCheckoutProcessor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/checkout/processors/PennyRoundingCheckoutProcessor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/dto/PaymentOption.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/dto/Tender.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/main/java/com/marks/pos/backoffice/fund/transfer/services/FundTransferOrchestrator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/test/java/com/marks/pos/backoffice/fund/transfer/api/TransferResponseTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-fund/src/test/resources/transfer_response.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-webservices/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/backoffice-webservices/src/test/java/com/marks/pos/backoffice/fund/transfer/api/TransferResponseTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FPOS/Gerrit4/ctco-fpos/pos_backoffice/pom.xml">
           <value>
             <set />
           </value>
@@ -49,6 +169,46 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/realty/autosolving/CitySuggest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/realty/autosolving/dot/City.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/realty/autosolving/dot/CityList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/realty/autosolving/dot/CityListResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/realty/autosolving/dot/ListOfCities.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/realty/dto/City.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/realty/dto/MainTryTestSomeFeatures.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/realty/dto/autosuggest/CitySuggest.java">
           <value>
             <set />
           </value>
