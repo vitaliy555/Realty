@@ -121,8 +121,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.6</version>
-        </dependency>
+            <version>1.16.6</version>       </dependency>
         <!--lombok-->
 
         <!--apache- commons-->
@@ -275,8 +274,8 @@
                 <version>2.3.2</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>

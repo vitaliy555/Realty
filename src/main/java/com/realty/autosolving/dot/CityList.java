@@ -13,6 +13,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class CityList {
     private String status;
     @JsonProperty("data")
-    private List<City> listOfCities = Collections.EMPTY_LIST;
+    private List<City> listOfCities ;
 
 }
