@@ -5,14 +5,20 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
 
 public class MainTryTestSomeFeatures {
-    public  void main(String[] args) throws IOException {
-        RestTemplate rest = new RestTemplate();
-        MultiValueMap<String, Object> parts = new
-                LinkedMultiValueMap<String, Object>();
-        parts.add("data", "дн");
-        String cityListResponseEntity = rest.postForObject("http://olx.ua/ajax/geo6/autosuggest/", parts, String.class);
-        System.out.println(cityListResponseEntity);
+    public static void main(String[] args) throws IOException {
+        for (byte b : "A".getBytes("UTF-8")) {
+            System.out.println(b);
+        }
+        for (byte b : "В".getBytes("UTF-8")) {
+            System.out.println(b);
+        }
+        for (byte b : "Я".getBytes("UTF-8")) {
+            System.out.println(b);
+        }
+
+        System.out.println("A".getBytes("UTF-8"));
     }
 }
