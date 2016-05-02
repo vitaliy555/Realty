@@ -5,5 +5,5 @@ package com.realty.autosolving.services;
  */
 
 public enum OLXResponceSatus {
-    OK,ERROR
+    ok, error
 }

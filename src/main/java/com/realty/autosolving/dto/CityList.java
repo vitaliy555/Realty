@@ -1,6 +1,5 @@
-package com.realty.autosolving.dot;
+package com.realty.autosolving.dto;
 
-import java.util.Collections;
 import java.util.List;
 
 import com.realty.autosolving.services.OLXResponceSatus;
