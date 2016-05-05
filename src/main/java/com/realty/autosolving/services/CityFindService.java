@@ -1,8 +1,9 @@
 package com.realty.autosolving.services;
 
-import static com.realty.autosolving.AlphabetHelper.getAllCombination;
-import static com.realty.autosolving.services.OLXResponceSatus.ok;
+import static com.realty.autosolving.util.AlphabetHelper.getAllCombination;
+import static com.realty.autosolving.dto.OLXResponseSatus.ok;
 
+import java.util.Collections;
 import java.util.List;
 
 import lombok.extern.slf4j.Slf4j;
@@ -14,8 +15,8 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import com.google.common.collect.Lists;
-import com.realty.autosolving.dto.City;
-import com.realty.autosolving.dto.CityList;
+import com.realty.autosolving.dto.OLXCity;
+import com.realty.autosolving.dto.OLXCityResponse;
 
 /**
  * Created by vitaliy on 4/29/2016.
@@ -33,12 +34,12 @@ public class CityFindService {
      *
      * @return
      */
-    public List<City> findAllExistCities() {
-        List<City> cities = Lists.newArrayList();
+    public List<OLXCity> findAllExistCities() {
+        List<OLXCity> olxAllCities = Lists.newArrayList();
         for (String phrase : getAllCombination()) {
-            cities.addAll(suggestCitiesByPhrase(phrase));
+            olxAllCities.addAll(suggestCitiesByPhrase(phrase));
         }
-        return cities;
+        return olxAllCities;
     }
 
     /**
@@ -47,17 +48,18 @@ public class CityFindService {
      * @param phrase - two letters
      * @return
      */
-    private List<City> suggestCitiesByPhrase(String phrase) {
+    private List<OLXCity> suggestCitiesByPhrase(String phrase) {
         MultiValueMap<String, Object> form = new LinkedMultiValueMap<String, Object>();
         form.add("data", phrase);
-        CityList cityList = rest.postForObject(cityUrl, form, CityList.class);
-        List<City> result = Lists.newArrayList();
-        if (ok.equals(cityList.getStatus())) {
-            result = cityList.getListOfCities();
+        OLXCityResponse OLXCityResponse = rest.postForObject(cityUrl, form, OLXCityResponse.class);
+        List<OLXCity> olxCities ;
+        if (ok.equals(OLXCityResponse.getStatus())) {
+            olxCities = OLXCityResponse.getOlxCities();
         } else {
-            log.debug(String.format("Request: %s \nResponse: %s", form, cityList));
+            log.info(String.format("Request: %s  Response: %s", form, OLXCityResponse));
+            olxCities= Collections.EMPTY_LIST;
         }
-        return result;
+        return olxCities;
     }
 
 }

@@ -33,7 +33,4 @@
       <module name="Realty" target="1.7" />
     </bytecodeTargetLevel>
   </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-javaagent:lombok.jar" />
-  </component>
 </project>

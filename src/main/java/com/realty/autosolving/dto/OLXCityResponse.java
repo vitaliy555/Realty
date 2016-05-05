@@ -2,7 +2,6 @@ package com.realty.autosolving.dto;
 
 import java.util.List;
 
-import com.realty.autosolving.services.OLXResponceSatus;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,9 +11,9 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class CityList {
-    private OLXResponceSatus status;
+public class OLXCityResponse {
+    private OLXResponseSatus status;
     @JsonProperty("data")
-    private List<City> listOfCities ;
+    private List<OLXCity> olxCities ;
 
 }

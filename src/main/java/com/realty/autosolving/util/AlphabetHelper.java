@@ -1,4 +1,4 @@
-package com.realty.autosolving;
+package com.realty.autosolving.util;
 
 import com.google.common.collect.Lists;
 

@@ -1,6 +1,6 @@
 package com.realty.autosolving;
 
-import junit.framework.Assert;
+import com.realty.autosolving.util.AlphabetHelper;
 import org.junit.Test;
 
 import java.util.List;

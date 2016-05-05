@@ -8,18 +8,20 @@
     </appender>
 
     <appender name="file" class="ch.qos.logback.core.FileAppender">
-        <file>MyLog.log</file>
+        <file>realty.log</file>
         <layout class="ch.qos.logback.classic.PatternLayout">
             <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
         </layout>
     </appender>
 
     <root level="DEBUG">
-        <appender-ref ref="console"/>
-        <appender-ref ref="file"/>
+        <!--<appender-ref ref="console"/>-->
+        <!--<appender-ref ref="file"/>-->
     </root>
 
-    <logger name="com.realty" level="debug"/>
+    <logger name="com.realty.autosolving.services" level="debug" additivity="false">
+        <appender-ref ref="file"/>
+    </logger>
 
 
 </configuration>

@@ -7,7 +7,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
-public class City {
+public class OLXCity {
     private int id;
     private String text;
     private String text_simple;
