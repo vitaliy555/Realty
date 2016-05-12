@@ -1,19 +1,32 @@
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://127.0.0.1/media</property>
-        <property name="connection.username">media</property>
-        <property name="connection.password">123456</property>
-        <property name="connection.pool_size">1</property>
-        <property name= "cache.provider_class">
-            org.hibernate.cache.NoCacheProvider
-        </property>
-        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <!--     Hibernate SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!--         Database connection settings -->
+        <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Realty</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+
+        <!--         Disable the second level cache -->
+        <!--<property name="hibernate.cache.use_second_level_cache">false</property>-->
+
+        <!--         Show SQL queries -->
         <property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">update</property>
-        <property name="current_session_context_class">thread</property>
+
+        <!--         JDBC connection pool -->
+        <!--//TODO increase pool size-->
+        <property name="connection.pool_size">1</property>
+
+        <!-- 		Names the annotated entity class -->
+        <!--<mapping class="org.example.dto.UserDetails"/>-->
     </session-factory>
 </hibernate-configuration>
