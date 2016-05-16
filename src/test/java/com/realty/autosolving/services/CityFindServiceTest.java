@@ -1,11 +1,15 @@
 package com.realty.autosolving.services;
 
+import com.realty.autosolving.dto.OLXCity;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import java.util.List;
 
 /**
  * Created by vitaliy on 5/2/2016.
@@ -23,6 +27,7 @@ public class CityFindServiceTest {
 
     @Test
     public void testhistFindAllExistCities() throws Exception {
-        System.out.println(cityFindService.findAllExistCities());
+        List<OLXCity> allExistCities = cityFindService.findAllExistCities();
+        System.out.println(allExistCities.size());
     }
 }
