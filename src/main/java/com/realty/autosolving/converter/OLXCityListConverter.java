@@ -7,7 +7,9 @@ import org.springframework.core.convert.converter.Converter;
 import com.google.common.collect.Lists;
 import com.realty.autosolving.dto.OLXCity;
 import com.realty.autosolving.model.City;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OLXCityListConverter implements Converter<List<OLXCity>, List<City>> {
 
     @Override
