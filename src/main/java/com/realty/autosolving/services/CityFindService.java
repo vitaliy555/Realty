@@ -36,9 +36,9 @@ public class CityFindService {
      */
     public List<OLXCity> findAllExistCities() {
         List<OLXCity> olxAllCities = Lists.newArrayList();
-//        for (String phrase : getAllCombination()) {
-//            olxAllCities.addAll(suggestCitiesByPhrase(phrase));
-//        }
+        for (String phrase : getAllCombination()) {
+            olxAllCities.addAll(suggestCitiesByPhrase(phrase));
+        }
         return olxAllCities;
     }
 
