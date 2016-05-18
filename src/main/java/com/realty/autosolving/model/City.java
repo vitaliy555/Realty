@@ -1,5 +1,7 @@
 package com.realty.autosolving.model;
 
+import org.hibernate.annotations.Cache;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,6 +18,7 @@ import javax.persistence.Table;
 @Getter
 @Entity
 @Table(name = "city")
+//TODO @Cache()
 public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
