@@ -10,7 +10,7 @@ import com.realty.facade.CityFacade;
 
 @RestController
 @RequestMapping("auto-filling")
-public class AutoFilling {
+public class AutoFillingController {
     @Autowired
     private CityFacade cityFacade;
 
